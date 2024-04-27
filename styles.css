@@ -64,22 +64,6 @@ body {
     position: relative; /* Context for positioning */
 }
 
-.logo-above-carousel .logo-container img {
-    display: block; /* Remove extra space around the image */
-    max-width: 100%; /* Image can grow up to the width of the container */
-    position: relative; /* Allows positioning relative to its normal position */
-    top: -20%; /* Move the image up to hide 20% of the top */
-    opacity: 1.0; /* Full opacity */
-}
-
-
-.logo-above-carousel .logo-image {
-    width: 100%; /* Ensures the logo stretches to fill the container */
-    position: absolute; /* Allows precise positioning of the image */
-    top: 0; /* Aligns the top of the image with the top of the container */
-    opacity: 1.0; /* Optional styling for logo opacity */
-}
-
 .carousel-item {
     flex: none; /* Do not grow or shrink */
     position: relative; /* Stack children absolutely */
