@@ -11,20 +11,27 @@ body {
 
 .navbar-nav {
     flex-direction: row;
-    justify-content: center; /* Center align the menu */
+    justify-content: center;
     width: 100%;
 }
 
 .carousel-inner img {
     width: 100%;
     height: auto;
+    opacity: 0.5; /* Lower opacity for non-active images */
+    transition: opacity 0.5s ease;
+}
+
+.carousel-inner .active img {
+    opacity: 1; /* Full opacity for active image */
+    transform: scale(1.1); /* Slightly larger scale for main image */
 }
 
 #menuSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust or remove height as necessary */
+    height: 100vh;
 }
 
 footer {
