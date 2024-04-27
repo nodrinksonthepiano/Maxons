@@ -57,27 +57,18 @@ body {
 }
 
 .logo-above-carousel .logo-container {
-    width: 500px; /* Same as the max-width of the image */
-    height: 40%; /* Display 60% of the image height to cut off 20% from top and 20% from bottom */
-    overflow: hidden; /* Hide parts of the image that are outside this container */
-    margin: 0 auto; /* Center the container horizontally */
-    position: relative; /* Context for positioning */
+    width: 100%; /* Adjusts the width as needed */
+    overflow: hidden; /* Keeps everything neat */
+    text-align: center; /* Centers the logo horizontally */
+    margin: 20px 0; /* Adds some vertical spacing */
 }
 
 .logo-above-carousel .logo-container img {
-    display: block; /* Remove extra space around the image */
-    max-width: 100%; /* Image can grow up to the width of the container */
-    position: relative; /* Allows positioning relative to its normal position */
-    top: -60%; /* Move the image up to hide 20% of the top */
+    max-width: 100%; /* Ensures the logo is responsive and fits its container */
+    height: auto; /* Maintains aspect ratio */
     opacity: 1.0; /* Full opacity */
 }
 
-.logo-above-carousel .logo-image {
-    width: 100%; /* Ensures the logo stretches to fill the container */
-    position: absolute; /* Allows precise positioning of the image */
-    top: 0; /* Aligns the top of the image with the top of the container */
-    opacity: 1.0; /* Optional styling for logo opacity */
-}
 
 .carousel-item {
     flex: none; /* Do not grow or shrink */
