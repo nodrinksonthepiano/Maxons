@@ -57,7 +57,7 @@ body {
 }
 
 .logo-above-carousel .logo-container {
-    width: 500px; /* Same as the max-width of the image */
+    width: 676px; /* Same as the max-width of the image */
     overflow: hidden; /* Hide parts of the image that are outside this container */
     margin: 0 auto; /* Center the container horizontally */
     position: relative; /* Context for positioning */
