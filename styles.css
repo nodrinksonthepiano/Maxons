@@ -4,10 +4,12 @@ body {
     color: white;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5em;
+.navbar-brand img {
+    height: 50px; /* or your desired size */
+    width: auto;
+    margin-right: 10px; /* Adds some space between the logo and the brand name */
 }
+
 
 .navbar-nav {
     flex-direction: row;
