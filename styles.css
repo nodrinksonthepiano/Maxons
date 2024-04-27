@@ -45,9 +45,7 @@ body {
     .navbar-toggler {
         margin-right: auto; /* Adjust toggle button position */
     }
-}
 
-@media (max-width: 991px) {
     .navbar-brand {
         flex-grow: 1;
         text-align: center;
@@ -58,17 +56,29 @@ body {
     }
 }
 
-.carousel-inner img {
-    width: 100%;
+.carousel-item {
+    flex: none; /* Do not grow or shrink */
+    position: relative; /* Stack children absolutely */
+    width: 100%; /* Adjust width as necessary */
+    padding: 50px; /* Adds space around the image inside the container */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.carousel-item img {
+    width: calc(100% - 40px); /* Adjusts width to allow for padding */
     height: auto;
+    margin: auto; /* Centers the image horizontally */
     opacity: 0.5; /* Lower opacity for non-active images */
     transition: opacity 0.5s ease;
+    border: 5px solid black; /* Adds a black border around the image */
+    box-sizing: border-box; /* Includes border in the width calculation */
 }
 
 .carousel-inner .active img {
     opacity: 1; /* Full opacity for active image */
     transform: scale(1.01); /* Slightly larger scale for main image */
 }
+
 
 #menuSection {
     display: flex;
@@ -87,8 +97,6 @@ h2 {
     font-size: 2.5rem; /* Example size, adjust based on your design needs */
     z-index: 2;  /* Ensures the text stays on top of the background image */
 }
-
-
 
 footer {
     background: #000000;
