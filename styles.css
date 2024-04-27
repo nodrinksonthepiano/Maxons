@@ -63,7 +63,7 @@ body {
 .carousel-item {
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding: 70px;
 }
 
 .carousel-item img {
@@ -93,8 +93,9 @@ h2 {
 }
 
 footer {
-    background: #000000;
-    padding: 20px;
+    background: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsOutsideSunset1.jpeg') no-repeat center center;
+    background-size: auto 300; /* Enlarges the image to cut off the top and bottom */
+    padding: 40px;
     color: white;
     text-align: center;
 }
