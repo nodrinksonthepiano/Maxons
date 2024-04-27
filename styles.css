@@ -57,10 +57,17 @@ body {
 }
 
 .logo-above-carousel .logo-container {
-    width: 500px; /* Same as the max-width of the image */
-    height: 60%; /* Display 60% of the image height to cut off 20% from top and 20% from bottom */
+    width: 100%; /* Full width of the parent */
+    height: auto; /* Keep the aspect ratio */
     margin: 0 auto; /* Center the container horizontally */
     position: relative; /* Context for positioning */
+}
+
+@media screen and (max-width: 600px) {
+    .logo-above-carousel .logo-container {
+        width: 90%; /* Reduce width on small screens */
+        height: auto; /* Keep the aspect ratio */
+    }
 }
 
 .carousel-item {
