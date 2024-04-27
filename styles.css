@@ -57,18 +57,13 @@ body {
 }
 
 .logo-above-carousel .logo-container {
-    width: 100%; /* Adjusts the width as needed */
-    overflow: hidden; /* Keeps everything neat */
-    text-align: center; /* Centers the logo horizontally */
-    margin: 20px 0; /* Adds some vertical spacing */
+    max-width: 500px; /* Same as the max-width of the image */
+    width: 100%; /* Full width on smaller screens */
+    height: 40%; /* Display 60% of the image height to cut off 20% from top and 20% from bottom */
+    overflow: hidden; /* Hide parts of the image that are outside this container */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Context for positioning */
 }
-
-.logo-above-carousel .logo-container img {
-    max-width: 100%; /* Ensures the logo is responsive and fits its container */
-    height: auto; /* Maintains aspect ratio */
-    opacity: 1.0; /* Full opacity */
-}
-
 
 .carousel-item {
     flex: none; /* Do not grow or shrink */
