@@ -57,17 +57,24 @@ body {
 .header-logo-container {
     width: 100%;
     height: auto; /* Adjust the height as needed */
+    text-align: center; /* Center the logo horizontally */
+    overflow: hidden; /* This will hide any part of the logo that extends outside the container */
+}
+
+.header-logo {
+    width: 80%; /* Adjust based on preference, ensures it shrinks */
+    max-width: 600px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
+    margin-top: -20px; /* Reduce space above */
+    transition: width 0.5s ease; /* Smooth transition for resizing */
 }
 
 @media screen and (max-width: 600px) {
-    .header-logo-container {
-        font-size: 82em; /* Adjust the size as needed */
+    .header-logo {
+        width: 90%; /* Larger percentage on smaller screens */
+        margin-top: -10px; /* Less negative space on very small screens */
     }
-}
-.header-logo {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the area without being stretched */
 }
 
 .carousel-item {
