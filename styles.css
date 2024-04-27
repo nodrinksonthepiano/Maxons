@@ -56,6 +56,29 @@ body {
     }
 }
 
+.logo-above-carousel .logo-container {
+    width: 500px; /* Same as the max-width of the image */
+    height: 40%; /* Display 60% of the image height to cut off 20% from top and 20% from bottom */
+    overflow: hidden; /* Hide parts of the image that are outside this container */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Context for positioning */
+}
+
+.logo-above-carousel .logo-container img {
+    display: block; /* Remove extra space around the image */
+    max-width: 100%; /* Image can grow up to the width of the container */
+    position: relative; /* Allows positioning relative to its normal position */
+    top: -60%; /* Move the image up to hide 20% of the top */
+    opacity: 1.0; /* Full opacity */
+}
+
+.logo-above-carousel .logo-image {
+    width: 100%; /* Ensures the logo stretches to fill the container */
+    position: absolute; /* Allows precise positioning of the image */
+    top: 0; /* Aligns the top of the image with the top of the container */
+    opacity: 1.0; /* Optional styling for logo opacity */
+}
+
 .carousel-item {
     flex: none; /* Do not grow or shrink */
     position: relative; /* Stack children absolutely */
@@ -87,7 +110,7 @@ body {
     align-items: center;  /* Centers content horizontally */
     height: 100vh;
     padding-top: 50px;  /* Adds space at the top, adjust as needed */
-    background: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsLogo2016.webp') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsInsideCeiling.jpeg') no-repeat center center;
     background-size: contain;  /* Adjust size as needed */
     color: #fff;  /* Ensures text is visible on darker backgrounds */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);  /* Adds a shadow to text for better readability */
