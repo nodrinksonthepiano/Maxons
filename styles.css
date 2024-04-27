@@ -16,10 +16,6 @@ body {
     margin-right: 30px;
 }
 
-.navbar-nav {
-    align-items: center;
-}
-
 .phone-number {
     color: rgb(47, 86, 191);
     font-size: 1.1rem;
@@ -30,50 +26,37 @@ body {
     z-index: 1050;
 }
 
+/* Adjusted media query for phone-number visibility */
 @media (max-width: 991px) {
     .phone-number {
-        display: block;
         position: static;
-        margin-left: auto;
         margin-right: 20px;
         transform: none;
         text-align: right;
-    }
-
-    .navbar-toggler {
-        margin-right: auto;
-    }
-
-    .navbar-brand {
-        flex-grow: 1;
-        text-align: center;
-    }
-
-    .navbar-nav {
-        flex-grow: 0;
+        display: block; /* Ensures it's always visible */
     }
 }
 
 .header-logo-container {
     width: 100%;
-    height: auto; /* Adjust the height as needed */
-    text-align: center; /* Center the logo horizontally */
-    overflow: hidden; /* This will hide any part of the logo that extends outside the container */
+    height: auto;
+    text-align: center;
+    overflow: hidden;
 }
 
 .header-logo {
-    width: 80%; /* Adjust based on preference, ensures it shrinks */
-    max-width: 600px; /* Maximum width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area without being stretched */
-    margin-top: -20px; /* Reduce space above */
-    transition: width 0.5s ease; /* Smooth transition for resizing */
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    margin-top: -20px;
+    transition: width 0.5s ease;
 }
 
 @media screen and (max-width: 600px) {
     .header-logo {
-        width: 90%; /* Larger percentage on smaller screens */
-        margin-top: -10px; /* Less negative space on very small screens */
+        width: 90%;
+        margin-top: -10px;
     }
 }
 
