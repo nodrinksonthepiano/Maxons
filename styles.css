@@ -117,8 +117,7 @@ h2 {
 }
 
 .family-photo-container {
-    padding-top: 70px;  /* Top padding */
-    padding-bottom: 70px;  /* Bottom padding */
+    padding: 90px;* 
     box-sizing: border-box;
 }
 
