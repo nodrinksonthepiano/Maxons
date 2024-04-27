@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/BurgerBaconCheeseLoadedTots.jpeg",
-        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/HoneySweetChickenSandwichMural.jpeg",
-        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/BaconCheeseburgers2.jpeg"
+        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/blob/main/main/BurgerBaconCheeseLoadedTots.jpeg",
+        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/blob/main/main/HoneySweetChickenSandwichMural.jpeg",
+        "https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/blob/main/main/BaconCheeseburgers2.jpeg"
     ];
 
     const indicators = document.querySelector('.carousel-indicators');
