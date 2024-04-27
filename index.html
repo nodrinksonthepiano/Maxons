@@ -11,22 +11,24 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
+                <!-- Hamburger toggle moved here for mobile view, always to the left -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <a class="navbar-brand" href="#">
                     <img src="https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsLogo2016.webp" alt="Maxon's Logo" style="height: 50px;">
                     Maxon's American Grill
                 </a>
-                <div class="phone-number d-none d-lg-block">
-                    (518) 382-1038
-                </div>        
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- Clarify this link is for the food menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#menuSection">Menu</a>
+                            <a class="nav-link" href="#menuSection">View Our Menu</a>
                         </li>
                     </ul>
+                </div>
+                <div class="phone-number d-lg-none d-xl-block">
+                    (518) 382-1038
                 </div>
             </div>
         </nav>

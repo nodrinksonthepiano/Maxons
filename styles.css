@@ -9,16 +9,16 @@ body {
     background-color: #000 !important; /* Black color */
 }
 
-.navbar-brand img {
-    height: 50px; /* or your desired size */
-    width: auto;
-    margin-right: 10px; /* Adds some space between the logo and the brand name */
+.navbar {
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+.navbar-brand {
+    margin-right: 30px; /* Provides spacing between logo and menu link */
 }
 
 .navbar-nav {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    align-items: center; /* Vertically centers navbar items */
 }
 
 .phone-number {
@@ -28,6 +28,34 @@ body {
     right: 20px;  /* Adjust spacing from the right edge */
     top: 50%;  /* Center vertically */
     transform: translateY(-50%);  /* Aligns center to exact middle */
+    z-index: 1050; /* Make sure it's above other elements */
+}
+
+/* Ensure phone number is always visible */
+@media (max-width: 991px) {
+    .phone-number {
+        display: block;
+        position: static;
+        margin-left: auto;
+        margin-right: 20px;
+        transform: none;
+        text-align: right;
+    }
+
+    .navbar-toggler {
+        margin-right: auto; /* Adjust toggle button position */
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-grow: 0;  /* Prevent navbar-nav from taking extra space */
+    }
 }
 
 .carousel-inner img {
