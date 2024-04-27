@@ -67,7 +67,7 @@ body {
 
 .carousel-inner .active img {
     opacity: 1; /* Full opacity for active image */
-    transform: scale(1.1); /* Slightly larger scale for main image */
+    transform: scale(1.01); /* Slightly larger scale for main image */
 }
 
 #menuSection {
