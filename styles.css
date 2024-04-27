@@ -59,6 +59,11 @@ body {
     height: auto; /* Adjust the height as needed */
 }
 
+@media screen and (max-width: 600px) {
+    .header-logo-container {
+        font-size: 2em; /* Adjust the size as needed */
+    }
+}
 .header-logo {
     width: 100%;
     height: auto;
