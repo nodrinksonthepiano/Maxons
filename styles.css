@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header-logo-container {
-        font-size: 2em; /* Adjust the size as needed */
+        font-size: 12em; /* Adjust the size as needed */
     }
 }
 .header-logo {
