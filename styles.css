@@ -1,7 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(184, 8, 8);
+}
+
+/* This ensures that the navbar has a black background */
+.navbar-dark.bg-dark {
+    background-color: #000 !important; /* Black color */
 }
 
 .navbar-brand img {
@@ -9,7 +14,6 @@ body {
     width: auto;
     margin-right: 10px; /* Adds some space between the logo and the brand name */
 }
-
 
 .navbar-nav {
     flex-direction: row;
@@ -37,7 +41,7 @@ body {
 }
 
 footer {
-    background: #333;
+    background: #000000;
     padding: 20px;
     color: white;
     text-align: center;
