@@ -1,37 +1,38 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-image: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsLogo2016.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: rgb(184, 8, 8);
 }
 
-/* This ensures that the navbar has a black background */
 .navbar-dark.bg-dark {
-    background-color: #000 !important; /* Black color */
+    background-color: #000 !important;
 }
 
 .navbar {
-    justify-content: flex-start; /* Aligns items to the left */
+    justify-content: flex-start;
 }
 
 .navbar-brand {
-    margin-right: 30px; /* Provides spacing between logo and menu link */
+    margin-right: 30px;
 }
 
 .navbar-nav {
-    align-items: center; /* Vertically centers navbar items */
+    align-items: center;
 }
 
 .phone-number {
-    color: rgb(47, 86, 191);  /* Adjust the color as needed */
-    font-size: 0.8rem;  /* Smaller than the main navigation text */
+    color: rgb(47, 86, 191);
+    font-size: 0.8rem;
     position: absolute;
-    right: 20px;  /* Adjust spacing from the right edge */
-    top: 50%;  /* Center vertically */
-    transform: translateY(-50%);  /* Aligns center to exact middle */
-    z-index: 1050; /* Make sure it's above other elements */
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1050;
 }
 
-/* Ensure phone number is always visible */
 @media (max-width: 991px) {
     .phone-number {
         display: block;
@@ -43,7 +44,7 @@ body {
     }
 
     .navbar-toggler {
-        margin-right: auto; /* Adjust toggle button position */
+        margin-right: auto;
     }
 
     .navbar-brand {
@@ -52,64 +53,56 @@ body {
     }
 
     .navbar-nav {
-        flex-grow: 0;  /* Prevent navbar-nav from taking extra space */
+        flex-grow: 0;
     }
 }
 
 .logo-above-carousel .logo-container {
-    width: 100%; /* Full width of the parent */
-    height: auto; /* Keep the aspect ratio */
-    margin: 0 auto; /* Center the container horizontally */
-    position: relative; /* Context for positioning */
-}
-
-@media screen and (max-width: 600px) {
-    .logo-above-carousel .logo-container {
-        width: 90%; /* Reduce width on small screens */
-        height: auto; /* Keep the aspect ratio */
-    }
+    width: 500px;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .carousel-item {
-    flex: none; /* Do not grow or shrink */
-    position: relative; /* Stack children absolutely */
-    width: 100%; /* Adjust width as necessary */
-    padding: 50px; /* Adds space around the image inside the container */
-    box-sizing: border-box; /* Includes padding in the width calculation */
+    flex: none;
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .carousel-item img {
-    width: calc(100% - 40px); /* Adjusts width to allow for padding */
+    width: calc(100% - 40px);
     height: auto;
-    margin: auto; /* Centers the image horizontally */
-    opacity: 0.5; /* Lower opacity for non-active images */
+    margin: auto;
+    opacity: 0.5;
     transition: opacity 0.5s ease;
-    border: 5px solid black; /* Adds a black border around the image */
-    box-sizing: border-box; /* Includes border in the width calculation */
+    border: 5px solid black;
+    box-sizing: border-box;
 }
 
 .carousel-inner .active img {
-    opacity: 1; /* Full opacity for active image */
-    transform: scale(1.01); /* Slightly larger scale for main image */
+    opacity: 1;
+    transform: scale(1.01);
 }
-
 
 #menuSection {
     display: flex;
-    flex-direction: column;  /* Aligns children (text, etc.) vertically */
-    justify-content: flex-start;  /* Aligns content to the top */
-    align-items: center;  /* Centers content horizontally */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 100vh;
-    padding-top: 50px;  /* Adds space at the top, adjust as needed */
+    padding-top: 50px;
     background: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsInsideCeiling.jpeg') no-repeat center center;
-    background-size: contain;  /* Adjust size as needed */
-    color: #fff;  /* Ensures text is visible on darker backgrounds */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);  /* Adds a shadow to text for better readability */
+    background-size: contain;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
-    font-size: 2.5rem; /* Example size, adjust based on your design needs */
-    z-index: 2;  /* Ensures the text stays on top of the background image */
+    font-size: 2.5rem;
+    z-index: 2;
 }
 
 footer {
