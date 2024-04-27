@@ -22,7 +22,7 @@ body {
 
 .phone-number {
     color: rgb(47, 86, 191);
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     position: absolute;
     right: 20px;
     top: 50%;
@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header-logo-container {
-        font-size: 12em; /* Adjust the size as needed */
+        font-size: 82em; /* Adjust the size as needed */
     }
 }
 .header-logo {
