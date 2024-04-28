@@ -2,31 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxon's American Grill - Glenville, NY</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    507 Saratoga Rd. Glenville 
-                    
-                </a>
-                <div class="phone-number d-lg-none d-xl-block">
-                    (518) 382-1038
-                </div>
-                <div class="hours-container">
-                    <div class="hours">
-                        OPEN Tuesday - Saturday 11am - 10pm /  Sunday 12pm - 8pm / CLOSED  Monday 
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt" onclick="toggleVisibility('address')"></i>
+                        <span id="address" class="info-text">507 Saratoga Rd. Glenville</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone" onclick="toggleVisibility('phone')"></i>
+                        <span id="phone" class="info-text">(518) 382-1038</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock" onclick="toggleVisibility('hours')"></i>
+                        <span id="hours" class="info-text">CLOSED Monday 
+                        <br> 
+                        OPEN 11am - 10pm Tuesday-Saturday 
+                        <br>
+                        12pm - 8pm Sunday
+                        </span>
                     </div>
                 </div>
-                
             </div>
         </nav>
+        <div class="marquee">
+            <div class="track">
+              <h2>OUR $11.99 TRIPLE TACO AND $8 MARGARITA WEDNESDAY SPECIAL IS NOW ALL DAY LONG! HOLY SMOKES! LUNCH OR DINNER, DINE IN OR TAKE OUT‼️😲😲❤️❤️ WE'RE AT IT AGAIN!!! DON’T WORRY, THERE IS STILL TIME!⏰⏰ SUNDAY BRUNCH GOES TILL 3, AND YES WE DO OFFER IT FOR TAKE OUT AS WELL!! CAN'T STOP, WON'T STOP...MAXON'S AMERICAN GRILL - GLENVILLE, NY - DON'T SPEED UP RT50 ...TAKE YOUR TIME - ODDS ARE THE DISHES ARE BACKUP UP ANYBODY WANT TO WORK ANYMORE?!?!? COME ON IN AND FILL OUT AN APPLICATION...BENEFITS!!! BRIAN IS LATE NIGHT AWAY FROM INVENTING SOMETHING CRAZY LIKE BAKED ZITI AND MEATBALL TACOS WHAT EVEN IS THAT?!? THIS IS A NICE SMALL TOWN WITH SOME FINE FOLKS LIVING HERE ...WHO EVEN DOES THAT ...ON A WEDNESDAY?! MAXON'S AMERICAN GRILL 507 SARATOGA RD GLENVILLE, NY 12302 </h2>
+            </div>
+          </div>
+    </header>
         <div class="header-logo-container">
             <img src="https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MAXONS VOTED BEST BURGER IN THE CAPITAL REGION.png" alt="Maxon's Logo" class="header-logo">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -118,15 +132,7 @@
               </a>
             </div>
           </div>
-          
-    </main>
-
-    <div class="marquee">
-        <div class="track">
-          <h2>OUR $11.99 TRIPLE TACO AND $8 MARGARITA WEDNESDAY SPECIAL IS NOW ALL DAY LONG! LUNCH OR DINNER, DINE IN OR TAKE OUT‼️😲😲❤️❤️</h2>
-        </div>
-      </div>
-
+        </main>
     <section id="reviewsSection">
         <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -213,7 +219,6 @@
             </a>
         </div>
     </section>    
-
     <div class="family-photo-container">
         <img src="https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/MaxonsFamilyPhoto2023.jpeg" alt="Maxon's Family" class="w-100">
     </div>

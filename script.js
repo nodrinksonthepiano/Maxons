@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // Handle carousel behavior for all carousels
     $('.carousel').each(function() {
         $(this).on('slide.bs.carousel', function(e) {
             var $e = $(e.relatedTarget);
@@ -18,4 +19,12 @@ $(document).ready(function() {
             }
         });
     });
+
+    // Toggle visibility for address, phone, and hours
+    $('.info-item i').click(function() {
+        $(this).next().toggle(); // Toggle visibility of the next span element
+    });
+
+    // Initialize tooltips (if you're using Bootstrap tooltips)
+    $('[data-toggle="tooltip"]').tooltip();
 });

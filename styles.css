@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: rgb(0, 0, 0);
-    color: rgb(184, 8, 8);
+    color: rgb(29, 59, 225);
 }
 
 .navbar-dark.bg-dark {
@@ -9,86 +9,89 @@ body {
 }
 
 .navbar {
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
-.navbar-brand {
-    margin-right: 30px;
+.container {
+    display: flex;
+    justify-content: space-between; /* Evenly distributes space around items */
+    align-items: center; /* Vertically aligns items in the container */
+    width: 100%;
 }
 
-.phone-number {
-    color: rgb(47, 86, 191);
-    font-size: 1.9rem;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1050;
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Even spacing between elements */
+    width: 100%;
 }
 
-/* Adjusted media query for phone-number visibility */
-@media (max-width: 991px) {
-    .phone-number {
-        position: static;
-        margin-right: 20px;
-        transform: none;
-        text-align: right;
-        display: block; /* Ensures it's always visible */
-    }
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Spacing between icon and text */
+    color: white;
+}
+
+.info-item i {
+    cursor: pointer; /* Indicates clickable items */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.info-text {
+    display: none; /* Text is hidden until icon is clicked */
+    transition: all 0.2s ease-in-out; /* Smooth transition for display */
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.track {
+    display: inline-block;
+    animation: scroll-announcement 60s linear infinite;
+}
+
+@keyframes scroll-announcement {
+    0% { transform: translateX(90%); }
+    100% { transform: translateX(-100%); }
 }
 
 .header-logo-container {
     width: 100%;
     height: auto;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; /* Ensures nothing overflows */
 }
 
 .header-logo {
     width: 80%;
     max-width: 600px;
     height: auto;
-    object-fit: cover;
-    margin-top: -80px;
-    margin-bottom: -60px;
-    transition: width 0.5s ease;
+    object-fit: cover; /* Ensures the image covers the designated area */
+    margin-top: -20px; /* Adjust top margin to lift the logo up */
+    margin-bottom: -20px; /* Adjust bottom margin to reduce space */
+    transition: width 0.5s ease; /* Smooth transition for resizing */
 }
 
 @media screen and (max-width: 600px) {
     .header-logo {
-        width: 90%;
-        margin-top: -10px;
+        width: 100%; /* Logo takes full width on smaller screens */
+        margin-top: -10px; /* Less margin on smaller screens */
     }
 }
 
 .hours-container {
     font-size: 1.9rem;
-    overflow: hidden;  /* Hides anything outside this container */
-    white-space: nowrap;  /* Keeps the text in a single line */
-    width: 100%;  /* Full width of the container */
-    position: relative;
-    height: 50px;  /* Adjust based on your design needs */
-}
-
-.hours {
-    display: inline-block;
-    padding-left: 100%;  /* Start the text off-screen */
-    animation: scroll-hours 15s linear infinite;  /* Adjust time for speed */
-}
-
-@keyframes scroll-hours {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);  /* Moves the text from right to left */
-    }
+    display: none; /* Initially hidden, toggle display via JavaScript */
 }
 
 .carousel-item {
     position: relative;
     width: 100%;
-    padding: 70px;
+    padding: 50px; /* Padding around images within carousel items */
 }
 
 .carousel-item img {
@@ -99,54 +102,39 @@ body {
 }
 
 .carousel-inner .active img {
-    opacity: 1;
+    opacity: 1; /* Active item fully visible */
 }
 
 #reviewsSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20vh;
-    padding-top: 1px;
-    padding-bottom: 70px;
+    height: 100vh; 
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-size: cover;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.marquee {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .track {
-    display: inline-block;
-    animation: scroll-announcement 10s linear infinite;
-  }
-  
-  @keyframes scroll-announcement {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-80%); }
-  }
-
 h2 {
-    font-size: 2.5rem;  /* Keeps font size large */
-    margin: 0;  /* Removes default margin */
-    line-height: 1.2;  /* Adjust line height for better text spacing */
+    font-size: 2.5rem;  /* Large font size for visibility */
+    margin: 0;
+    line-height: 1.2;  /* Adjust line height for better spacing */
 }
 
 .family-photo-container {
-    padding: 90px; 
+    padding: 90px;
     box-sizing: border-box;
 }
 
 footer {
     background: url('https://raw.githubusercontent.com/nodrinksonthepiano/Maxons/main/main/pics/Screen Shot 2024-04-27 at 2.36.51 PM.png') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the footer area completely */
+    background-size: cover; /* Full coverage of the footer area */
     padding: 40px;
     color: white;
     text-align: center;
     font-size: 1.9rem;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Depth with shadow */
 }
-
